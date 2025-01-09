@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./VideoList.module.scss";
 
 export default function VideoList({
@@ -17,9 +18,17 @@ export default function VideoList({
           onClick={() => onVideoSelect(video.id.videoId)}
         >
           <div className={styles.thumb}>
-            <img
+            {/* <img
               src={video.snippet.thumbnails.default.url}
               alt={video.snippet.title}
+            /> */}
+
+            <Image
+              src={video.snippet.thumbnails.default.url}
+              alt={video.snippet.title}
+              width={400}
+              height={300}
+              priority
             />
             <button onClick={() => onVideoSelect(video.id.videoId)}>
               &#9658;

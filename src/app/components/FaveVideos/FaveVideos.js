@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./FaveVideos.module.scss";
 
 export default function FaveVideos({ favourites, onVideoSelect, onRemove }) {
@@ -12,9 +13,17 @@ export default function FaveVideos({ favourites, onVideoSelect, onRemove }) {
       ) : (
         favourites.map((video) => (
           <div key={video.id.videoId} className={styles.favouritesItem}>
-            <img
+            {/* <img
               src={video.snippet.thumbnails.default.url}
               alt={video.snippet.title}
+            /> */}
+
+            <Image
+              src={video.snippet.thumbnails.default.url}
+              alt={video.snippet.title}
+              width={100}
+              height={100}
+              priority
             />
             <h3>{video.snippet.title}</h3>
             <button onClick={() => onVideoSelect(video.id.videoId)}>
