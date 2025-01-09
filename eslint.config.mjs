@@ -11,7 +11,7 @@
 
 // const eslintConfig = [...compat.extends("next/core-web-vitals")];
 
-module.exports = {
+export default {
   extends: ["next/core-web-vitals"],
 };
 
