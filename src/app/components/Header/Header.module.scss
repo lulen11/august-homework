@@ -1,0 +1,110 @@
+@use "../../styles/globals" as globals;
+
+.header {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: transparent;
+
+  &Wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  .logo {
+    transition: globals.$smooth-transition;
+    fill: var(--logo-fill-color);
+    z-index: 100;
+  }
+
+  &Content {
+    background-color: globals.$citron;
+    height: 100vh;
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transform: translateY(-100vh);
+
+    @media only screen and (min-width: globals.$sm-md) {
+      height: auto;
+      background: transparent;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      transform: none;
+      position: relative;
+      padding: 0;
+      transition: none;
+      transform: none;
+    }
+  }
+}
+
+.menu {
+  &Toggle {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: globals.$primary-white;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    right: -1rem;
+    top: -1rem;
+    z-index: 10;
+
+    @media only screen and (min-width: globals.$sm-md) {
+      display: none;
+    }
+  }
+
+  &Open {
+    transform: translateY(0);
+  }
+}
+
+.nav {
+  flex-direction: column;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 1rem;
+
+  @media only screen and (min-width: globals.$sm-md) {
+    display: flex;
+    flex-direction: row;
+    margin: 0 1rem 0;
+  }
+
+  &Item {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: globals.$text-colour;
+    transition: globals.$smooth-transition;
+    margin: 0.5rem 0;
+    padding: 0.25rem 0.75rem;
+    text-align: center;
+
+    @media only screen and (min-width: globals.$sm-md) {
+      margin: 0 0.5rem;
+      color: globals.$primary-white;
+      text-align: unset;
+    }
+
+    &:hover {
+      // LS note: Would ordinarily go with a interaction accent colour defined in style guide + more contrast
+      color: globals.$app-accent-colour;
+    }
+  }
+}

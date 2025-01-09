@@ -1,0 +1,49 @@
+@use "../styles/colours" as colours;
+@use "../styles/breakpoints" as breakpoints;
+@use "../styles/motion" as motion;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+$sans-serif-font: "Lato", Arial, Helvetica, sans-serif;
+
+@mixin headingFont1 {
+  font-family: $sans-serif-font;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--text-color);
+
+  &::selection {
+    background: colours.$site-accent-colour;
+    color: colours.$text-colour;
+  }
+  @media only screen and (min-width: breakpoints.$sm-md) {
+    font-size: 6rem;
+  }
+}
+@mixin headingFont2 {
+  font-family: $sans-serif-font;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text-color);
+
+  &::selection {
+    background: colours.$site-accent-colour;
+    color: colours.$text-colour;
+  }
+}
+
+@mixin bodyFont {
+  font-family: $sans-serif-font;
+  color: var(--text-color);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-wrap: pretty;
+  &::selection {
+    background: colours.$site-accent-colour;
+    color: colours.$text-colour;
+  }
+}

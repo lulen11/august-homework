@@ -1,0 +1,40 @@
+@use "../../styles/globals" as globals;
+
+.footer {
+  box-sizing: border-box;
+  padding: 1rem;
+  bottom: 0;
+  width: 100%;
+  background-color: globals.$eggplant;
+  transition: globals.$smooth-transition;
+
+  &Wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav {
+  list-style-type: none;
+  @media only screen and (min-width: globals.$sm-md) {
+    display: flex;
+  }
+  &Item {
+    display: block;
+    margin: 0.75rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: globals.$primary-white;
+    transition: globals.$smooth-transition;
+    text-align: center;
+    @media only screen and (min-width: globals.$sm-md) {
+      margin: 0 0.5rem;
+    }
+
+    &:hover {
+      // LS note: Would ordinarily go with a interaction accent colour defined in style guide + more contrast
+      color: globals.$site-accent-colour;
+    }
+  }
+}
