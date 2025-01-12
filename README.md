@@ -68,12 +68,19 @@ Ordinarily I would import a design library to use an SVG based icon library thou
 
 ---
 
-### Some notable points about the design and build:
+## Some notable points about the design and build:
 
-- The Lifecare page was a straight forward build. I focused on responsiveness and future-proofing the build. It took approximately 2 hours to set up—Longer than it usually would for a design of this simplicity, simply because I chose to group it in with the app framework needed for part three of the task.
-- In the Lifecare page, few things I chose to bypass to continue onto the black belt task: including a favicon, proper links, nicer handling of the responsive menu animation - particularly on open & close. Here are a couple of sites you can browse that I've worked on recently. These demonstrate my focus on a webpage in it's entirety: [CLG](https://www.codelikeagirl.com/) & CLG's [School of Code](https://learnto.codelikeagirl.com/).
+#### The Lifecare page was a straight forward build.
 
-- The video app took approximately 3-4 hours. I split this task into (a) functionality and (b) design — (a) The functionality was complete in under two hours, I used ChatGPT to help refamiliarise myself with the outline steps needed to generate a YouTube API key, fetch videos via the API endpoint, etc. I've done these tasks before but I'm most efficient when aided by generative AI or following an online guide. Once I'm reading through developer guides, I know where it might be steering me in the wrong direction. e.g. ChatGPT was prompting me to install Axios for API requests at one point and I knew I could just use basic Fetch API. (b) The second half of my time on part two was spent on improving the code by organising into component architecture as well as working on UX and design features.
+- I focused on responsiveness and future-proofing the build. 
+- It took approximately 2 hours to set up—Longer than it usually would for a design of this simplicity, simply because I chose to group it in with the app framework needed for part three of the task.
+- There were a few things I chose to bypass to continue onto the black belt task: including a favicon, proper links, nicer handling of the responsive menu animation - particularly on open & close. Here are a couple of sites you can browse that I've worked on recently which demonstrate my focus on a webpage in it's entirety: [CLG](https://www.codelikeagirl.com/) & CLG's [School of Code](https://learnto.codelikeagirl.com/).
+
+#### The video app took approximately 3-4 hours to complete. 
+
+- I split this task into (a) functionality and (b) design — 
+  - (a) The functionality was complete in under two hours, I used ChatGPT to help refamiliarise myself with the outline steps needed to generate a YouTube API key, fetch videos via the API endpoint, etc. I've done these tasks before but I'm most efficient when aided by generative AI or following an online guide. Once I'm reading through developer guides, I know where it might be steering me in the wrong direction. e.g. ChatGPT was prompting me to install Axios for API requests at one point and I knew I could just use basic Fetch API. 
+  - (b) The second half of my time on part two was spent on improving the code by organising into component architecture as well as working on UX and design features.
   
 **Further details on the video app:**
 
