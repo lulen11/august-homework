@@ -2,6 +2,10 @@ Hi Kurt, Hi Sarah, Hi Simon 👋🏼
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+The Lifecare page can be found on the home page and the video app can be found at `/play` e.g. http://localhost:3000/play
+
+---
+
 #### Look at it locally:
 
 1. Clone the repository.
