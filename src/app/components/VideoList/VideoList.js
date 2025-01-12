@@ -18,11 +18,6 @@ export default function VideoList({
           onClick={() => onVideoSelect(video.id.videoId)}
         >
           <div className={styles.thumb}>
-            {/* <img
-              src={video.snippet.thumbnails.default.url}
-              alt={video.snippet.title}
-            /> */}
-
             <Image
               src={video.snippet.thumbnails.default.url}
               alt={video.snippet.title}

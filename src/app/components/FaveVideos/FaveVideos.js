@@ -13,11 +13,6 @@ export default function FaveVideos({ favourites, onVideoSelect, onRemove }) {
       ) : (
         favourites.map((video) => (
           <div key={video.id.videoId} className={styles.favouritesItem}>
-            {/* <img
-              src={video.snippet.thumbnails.default.url}
-              alt={video.snippet.title}
-            /> */}
-
             <Image
               src={video.snippet.thumbnails.default.url}
               alt={video.snippet.title}
