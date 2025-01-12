@@ -13,7 +13,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 #### Look at it live:
 
-Visit the deployed version of the project [here](https://august-homework.vercel.app/). _EDIT: I usually deploy my sites to Vercel with ease though I ran into issues with this one. I spent some time looking into it though I ended up focusing on finishing the set tasks. I considered not including this botched deployment attempt but I chose to leave it in my submission because I'm curious as to why it's returning a 404 and I'd like to resolve eventually._
+Visit the deployed version of the project [here](https://august-homework.vercel.app/). _EDIT: I usually deploy my sites to Vercel with ease though I ran into issues with this one. I spent some time looking into it though I ended up shifting my focus back to the set tasks. I considered not including this botched deployment attempt though I chose to leave it in my submission because I'm curious as to why it's returning a 404. I'd like to resolve it eventually._
 
 ---
 
