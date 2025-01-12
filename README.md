@@ -33,6 +33,8 @@ From there, I set up the foundational styles for the design provided, including 
 
 The components are all setup individually and use CSS modules. This component-based architecture allows the work to be clean, organised and adaptable to be reused and easily maintained across the project. Some sections of the site haven't been moved into components just because I was running out of time but I think I've noted where those are in the comments.
 
+Ordinarily I would import a design library to use an SVG based icon library though for efficiency in this task I've used HTML symbols for any icons.
+
 .
 
 ### Activities 1, 2 & 3 Complete:
@@ -51,6 +53,10 @@ The components are all setup individually and use CSS modules. This component-ba
 
 ### Some notable points about the build:
 
+- The Lifecare page was a straight forward build. I focused on responsiveness and future-proofing the build. It took approximately 2 hours to set up—longer than it usually would for a design of this simplicity, simply because I chose to group it in with the app framework needed for part three of the task.
+- The video app took approximately 3-4 hours. I split this task into (a) Functionality and (b) Design.
+- (a) The functionality was complete in under two hours, I used ChatGPT to help refamiliarise myself with the outline steps needed to generate a YouTube API key, fetch videos via the API endpoint, etc. I've done these tasks before but I'm most efficient when following an online guide. I wouldn't be able to write the JavaScript off the top of my head so I love to use generative AI to guide me through steps. Once I'm reading through it, I know where it might be guiding me in the wrong way—e.g. ChatGPT was prompting me to install Axios for API requests at one point and I knew I could just use basic Fetch API.
+- (b) The second half of my time on part two was spent on improving the code by organising into component architecture as well as working on UX and design features.
 - In the Lifecare page, few things I chose to bypass to continue onto the black belt task: including a favicon, proper links, nicer handling of the responsive menu animation - particularly on open & close. Here are a couple of sites you can browse that I've worked on recently. These demonstrate my focus on a webpage in it's entirety: [CLG](https://www.codelikeagirl.com/) & CLG's [School of Code](https://learnto.codelikeagirl.com/).
 - For the video app: I created a 'YouTube Data API v3' API Key in Google Cloud Console, retrieved the generated API key and created a _.env.local_ file to store it in. I haven't done this in a long time so followed online guides and had it done promptly.
 - Then setup my `PlayPage` and used a basic Fetch request to get videos from YouTube
